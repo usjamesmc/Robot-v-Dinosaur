@@ -12,7 +12,7 @@ class Battlefield:
 
     def display_welcome(self):
         display_message = 'Welcome to the Ultimate Battlefield of Robots and Dinosaurs' 
-        print(display_message)       
+        print(display_message)    
 
     def battle_phase(self):
         while self.robot.health > 0 and self.dinosaur.health > 0:
