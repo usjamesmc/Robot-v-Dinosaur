@@ -3,5 +3,10 @@ class Dinosaur:
         self.health = 100
         self.name = name
         self.attack_power = attack_power
-    def attack(self):   
-        pass
+    def attack(self, robot):   
+        if robot.health > 0:
+            robot.health -= self.attack_power
+            print(f'Dinosaur has attacked Robot on the Battlefield dealing {self.attack_power} damage. Dinosaur is down to {robot.health} health.')
+            
+        else:
+            print('Robot has won the battle!')
