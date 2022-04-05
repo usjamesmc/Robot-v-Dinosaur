@@ -9,8 +9,6 @@ class Robot:
             dinosaur.health -= self.active_weapon.attack_power
             print(f'Robot has attacked Dinosaur on the Battlefield dealing {self.active_weapon.attack_power} damage. Dinosaur is down to {dinosaur.health} health.')
             
-        else:
-            print('Robot has won the battle!')
-
+        
 
         
