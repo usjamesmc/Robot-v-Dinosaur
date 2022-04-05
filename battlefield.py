@@ -17,8 +17,7 @@ class Battlefield:
 
     def battle_phase(self):
         self.robot.attack(self.dinosaur)
-        
-        
+        self.dinosaur.attack(self.robot)     
 
     def display_winner(self):
         pass    

@@ -4,12 +4,13 @@ class Robot:
         self.health = 100
         self.name = name
         self.active_weapon = Weapon('Flamethrower', 20)
-    def attack(dinosaur):
-        dino = dinosaur
-        if dino.health > 0:
-            dino.health = dino.health - 25
+    def attack(self, dinosaur):
+        if dinosaur.health > 0:
+            dinosaur.health -= self.active_weapon.attack_power
+            print(f'Robot has attacked Dinosaur on the Battlefield dealing {self.active_weapon.attack_power} damage. Dinosaur is down to {dinosaur.health} health.')
+            
         else:
-            print(dino.health)
-        print(dino_power)
+            print('Robot has won the battle!')
+
 
         
